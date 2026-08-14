@@ -21,7 +21,7 @@
 <meta name="twitter:description" content="DimaArt offers premium custom portrait paintings in Guwahati, Assam. Rated 4.9/5, we specialize in family, memorial, couple, and pet portraits. Open 7 days a week. Call 070027 68435 to commission your masterpiece.">
 <meta name="twitter:image" content="https://biz-chijcb8n69hfwjcrcz6otiimdk.vercel.app/img/photo-0.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Portrait painting by DimaArt","description":"DimaArt offers premium custom portrait paintings in Guwahati, Assam. Rated 4.9/5, we specialize in family, memorial, couple, and pet portraits. Open 7 days a week. Call 070027 68435 to commission your masterpiece.","url":"https://biz-chijcb8n69hfwjcrcz6otiimdk.vercel.app/","telephone":"+07002768435","address":{"@type":"PostalAddress","streetAddress":"Basistha Mandir Rd, Basistha, Guwahati, Assam 781029, India","addressLocality":"Assam 781029","addressCountry":"IN"},"image":"https://biz-chijcb8n69hfwjcrcz6otiimdk.vercel.app/img/photo-0.jpg","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"60"}}</script>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -95,6 +95,67 @@ section{padding:72px 5vw}
 @media(min-width:600px){.gallery-grid{grid-template-columns:repeat(3,1fr)}}
 .gallery-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;transition:transform .3s,opacity .3s}
 .gallery-grid img:hover{transform:scale(1.03);opacity:.9}
+/* ENQUIRY FORM */
+.enq-wrap{max-width:1100px;margin:0 auto;border-radius:24px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,.16);display:grid;grid-template-columns:1fr}
+@media(min-width:900px){.enq-wrap{grid-template-columns:1fr 1.15fr}}
+.enq-intro{position:relative;background:linear-gradient(160deg,#241207 0%,#140a03 100%);color:#fff;padding:44px 36px;overflow:hidden}
+.enq-intro-bg{position:absolute;inset:0;background-image:url('./p3.webp');background-size:cover;background-position:center;opacity:.14}
+.enq-intro-inner{position:relative;z-index:2}
+.enq-logo-row{display:flex;align-items:center;gap:14px;margin-bottom:30px}
+.enq-logo{width:52px;height:52px;border-radius:50%;border:1.5px solid #C9882A;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+.enq-wordmark .wm1{font-family:'Playfair Display',serif;font-weight:700;font-size:1.3rem;display:block;color:#fff}
+.enq-wordmark .wm1 span{color:#C9882A}
+.enq-wordmark .wm2{font-size:.58rem;letter-spacing:.13em;color:rgba(255,255,255,.55);display:block;margin-top:2px}
+.enq-kicker{font-size:.7rem;font-weight:700;letter-spacing:.14em;color:#C9882A;margin-bottom:14px}
+.enq-headline{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3.2vw,2.3rem);line-height:1.22;font-weight:700;margin-bottom:16px}
+.enq-headline .h1{color:#fff;display:block}
+.enq-headline .h2{color:#C9882A;display:block}
+.enq-lead{color:rgba(255,255,255,.72);font-size:.9rem;line-height:1.68;margin-bottom:30px;max-width:340px}
+.enq-features{display:flex;flex-direction:column;gap:18px;margin-bottom:32px}
+.enq-feature-item{display:flex;align-items:flex-start;gap:14px}
+.enq-feature-icon{width:38px;height:38px;border-radius:50%;background:rgba(201,136,42,.14);border:1px solid rgba(201,136,42,.3);display:flex;align-items:center;justify-content:center;font-size:1rem;flex-shrink:0}
+.enq-feature-item h4{font-size:.86rem;font-weight:700;color:#fff;margin-bottom:2px}
+.enq-feature-item p{font-size:.78rem;color:rgba(255,255,255,.55);line-height:1.45}
+.enq-contact-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:18px 20px;display:flex;flex-direction:column;gap:10px;position:relative}
+.enq-contact-card p.enq-ct-title{color:#C9882A;font-weight:700;font-size:.82rem;margin:0 0 4px}
+.enq-contact-card a,.enq-contact-card p{color:#fff;text-decoration:none;font-size:.84rem;display:flex;align-items:center;gap:10px;margin:0}
+.enq-contact-wa{position:absolute;right:18px;bottom:16px;width:38px;height:38px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;text-decoration:none}
+.enq-card{background:#fff;padding:44px 36px}
+.enq-card h2{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,3vw,2.1rem);font-weight:700;margin-bottom:10px}
+.enq-card h2 .g1{color:#0f172a}
+.enq-card h2 .g2{color:#C9882A}
+.enq-card>p.enq-sub{color:#64748b;font-size:.9rem;line-height:1.6;margin-bottom:18px}
+.enq-divider{display:flex;align-items:center;gap:10px;margin-bottom:26px}
+.enq-divider span{width:44px;height:2px;background:#C9882A88}
+.eq5-row{display:grid;grid-template-columns:1fr;gap:16px;margin-bottom:16px}
+@media(min-width:520px){.eq5-row{grid-template-columns:1fr 1fr}}
+.eq5-field{margin-bottom:16px}
+.eq5-field label{display:block;font-size:.82rem;font-weight:600;color:#334155;margin-bottom:6px}
+.eq5-field label .req{color:#ef4444}
+.eq5-field label .opt{color:#94a3b8;font-weight:500;font-size:.76rem}
+.eq5-wrap{position:relative}
+.eq5-wrap input,.eq5-wrap select,.eq5-wrap textarea{width:100%;padding:12px 14px 12px 40px;border:1px solid #e2e8f0;border-radius:10px;font-family:inherit;font-size:.88rem;color:#0f172a;background:#fff}
+.eq5-wrap input:focus,.eq5-wrap select:focus,.eq5-wrap textarea:focus{outline:none;border-color:#C9882A}
+.eq5-wrap textarea{padding-left:14px;resize:vertical;min-height:90px}
+.eq5-wrap select{appearance:none;-webkit-appearance:none;padding-right:32px;background-image:linear-gradient(45deg,transparent 50%,#64748b 50%),linear-gradient(135deg,#64748b 50%,transparent 50%);background-position:calc(100% - 18px) 55%,calc(100% - 13px) 55%;background-size:5px 5px,5px 5px;background-repeat:no-repeat}
+.eq5-icon{position:absolute;left:13px;top:50%;transform:translateY(-50%);opacity:.55;font-size:.95rem;pointer-events:none}
+.eq5-icon.eq5-icon-top{top:16px;transform:none}
+.eq5-count{text-align:right;font-size:.72rem;color:#94a3b8;margin-top:4px}
+.eq5-file{display:flex;align-items:center;justify-content:space-between;gap:14px;border:1px dashed #d6b878;border-radius:10px;padding:14px 16px;background:#fdfaf3}
+.eq5-file-label{font-size:.82rem;color:#334155;display:flex;align-items:center;gap:10px}
+.eq5-file-label span{display:block}
+.eq5-file-hint{font-size:.72rem;color:#94a3b8;margin-top:2px}
+.eq5-file-btn{background:#fff;border:1px solid #C9882A;color:#C9882A;padding:9px 18px;border-radius:8px;font-size:.8rem;font-weight:600;cursor:pointer;white-space:nowrap;font-family:inherit}
+.eq5-file-name{font-size:.76rem;color:#94a3b8;margin-top:8px}
+.eq5-methods{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
+.eq5-method{display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 8px;border:1px solid #e2e8f0;border-radius:10px;background:#fff;cursor:pointer;font-size:.82rem;font-weight:600;color:#334155;transition:border-color .2s,background .2s;font-family:inherit}
+.eq5-method span{font-size:1.05rem}
+.eq5-method.active{border-color:#C9882A;background:#C9882A0c;color:#C9882A}
+.eq5-consent{display:flex;align-items:flex-start;gap:10px;margin:6px 0 22px;font-size:.85rem;color:#334155}
+.eq5-consent input{margin-top:3px;flex-shrink:0}
+.eq5-submit{width:100%;background:linear-gradient(90deg,#C9882A,#a8701f);color:#fff;border:none;padding:16px;border-radius:12px;font-weight:700;font-size:.92rem;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;transition:opacity .2s;display:flex;align-items:center;justify-content:center;gap:10px}
+.eq5-submit:hover{opacity:.9}
+.eq5-note{display:flex;align-items:flex-start;gap:10px;background:#f8fafc;border-radius:10px;padding:14px 16px;margin-top:18px;color:#64748b;font-size:.78rem;line-height:1.55}
 /* REVIEWS */
 .rv-bg{background:#0f172a}
 .rv-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:40px}
@@ -154,7 +215,7 @@ footer{background:#020617;color:#334155;padding:28px 5vw;text-align:center;font-
   <div class="container">
     <div class="about-wrap">
       <div class="about-img-wrap" data-r>
-        <img src="./img/photo-0.jpg" alt="Portrait painting by DimaArt" class="about-img" loading="lazy" onerror="this.src='./img/photo-0.jpg'">
+        <img src="./p3.webp" alt="Portrait painting by DimaArt" class="about-img" loading="lazy">
       </div>
       <div data-r data-d="2">
         <p class="sec-eyebrow">About Us</p>
@@ -189,7 +250,143 @@ footer{background:#020617;color:#334155;padding:28px 5vw;text-align:center;font-
   </div>
 </div>
 
-<section><div class="container"><div class="sec-center" data-r><p class="sec-eyebrow">Gallery</p><h2 class="sec-h2">A Look Inside</h2></div><div class="gallery-grid"><img src="./img/photo-0.jpg" alt="Portrait painting by DimaArt" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1600&q=85&fit=crop&auto=format'"><img src="./img/photo-1.jpg" alt="Portrait painting by DimaArt" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=85&fit=crop&auto=format'"><img src="./img/photo-2.jpg" alt="Portrait painting by DimaArt" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1497366754035-f200968a7efa?w=1600&q=85&fit=crop&auto=format'"><img src="./img/photo-3.jpg" alt="Portrait painting by DimaArt" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=85&fit=crop&auto=format'"><img src="./img/photo-4.jpg" alt="Portrait painting by DimaArt" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&q=85&fit=crop&auto=format'"></div></div></section>
+<section><div class="container"><div class="sec-center" data-r><p class="sec-eyebrow">Gallery</p><h2 class="sec-h2">A Look Inside</h2></div><div class="gallery-grid"><img src="./p1.jpg" alt="Portrait painting by DimaArt" loading="lazy"><img src="./p2.jpg" alt="Portrait painting by DimaArt" loading="lazy"><img src="./img/photo-1.jpg" alt="Portrait painting by DimaArt" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=85&fit=crop&auto=format'"><img src="./img/photo-2.jpg" alt="Portrait painting by DimaArt" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1497366754035-f200968a7efa?w=1600&q=85&fit=crop&auto=format'"><img src="./img/photo-3.jpg" alt="Portrait painting by DimaArt" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1600&q=85&fit=crop&auto=format'"><img src="./img/photo-4.jpg" alt="Portrait painting by DimaArt" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1600&q=85&fit=crop&auto=format'"></div></div></section>
+
+<section id="enquiry">
+  <div class="container">
+    <div class="enq-wrap">
+      <div class="enq-intro" data-r>
+        <div class="enq-intro-bg"></div>
+        <div class="enq-intro-inner">
+          <div class="enq-logo-row">
+            <div class="enq-logo">🎨</div>
+            <div class="enq-wordmark"><span class="wm1">Dima<span>Art</span></span><span class="wm2">PORTRAITS THAT LAST FOREVER</span></div>
+          </div>
+          <p class="enq-kicker">HANDCRAFTED. HEARTFELT. TIMELESS.</p>
+          <h2 class="enq-headline"><span class="h1">Your Vision.</span><span class="h2">Our Artistry.</span></h2>
+          <p class="enq-lead">Share your portrait idea and let us create a masterpiece that captures your emotions, memories and moments beautifully.</p>
+          <div class="enq-features">
+            <div class="enq-feature-item"><div class="enq-feature-icon">🖌️</div><div><h4>100% Hand-Painted</h4><p>Every portrait is carefully hand-painted by our expert artists</p></div></div>
+            <div class="enq-feature-item"><div class="enq-feature-icon">🏆</div><div><h4>Premium Quality</h4><p>High quality canvas, colors and packaging for a lifetime of memories</p></div></div>
+            <div class="enq-feature-item"><div class="enq-feature-icon">💝</div><div><h4>Personalized Just For You</h4><p>Custom made to match your style, story and special moments</p></div></div>
+            <div class="enq-feature-item"><div class="enq-feature-icon">📦</div><div><h4>Safe &amp; On-Time Delivery</h4><p>Secure packaging and timely delivery across India</p></div></div>
+          </div>
+          <div class="enq-contact-card">
+            <p class="enq-ct-title">Get in Touch</p>
+            <a href="tel:070027 68435">📞 070027 68435</a>
+            <p>📍 Basistha, Guwahati, Assam</p>
+            <a href="https://wa.me/917002768435?text=Hello%20DimaArt!%20I%20came%20across%20your%20portrait%20painting%20studio%20and%20I'm%20interested%20in%20commissioning%20a%20custom%20portrait.%20Could%20you%20please%20share%20more%20details%20about%20pricing%2C%20timelines%2C%20and%20the%20process%3F" class="enq-contact-wa" aria-label="WhatsApp">💬</a>
+          </div>
+        </div>
+      </div>
+      <div class="enq-card" data-r>
+        <h2><span class="g1">Make an</span> <span class="g2">Enquiry</span></h2>
+        <p class="enq-sub">Fill in your details below and we'll get back to you with the best options for your custom portrait.</p>
+        <div class="enq-divider"><span></span>🎨<span></span></div>
+        <form id="enquiry-form-5">
+          <div class="eq5-row">
+            <div class="eq5-field">
+              <label>Full Name <span class="req">*</span></label>
+              <div class="eq5-wrap"><span class="eq5-icon">👤</span><input type="text" id="eq5-name" placeholder="Enter your full name" required></div>
+            </div>
+            <div class="eq5-field">
+              <label>Phone Number <span class="req">*</span></label>
+              <div class="eq5-wrap"><span class="eq5-icon">📞</span><input type="tel" id="eq5-phone" placeholder="Enter your phone number" required></div>
+            </div>
+          </div>
+          <div class="eq5-row">
+            <div class="eq5-field">
+              <label>Email Address <span class="req">*</span></label>
+              <div class="eq5-wrap"><span class="eq5-icon">✉️</span><input type="email" id="eq5-email" placeholder="Enter your email address" required></div>
+            </div>
+            <div class="eq5-field">
+              <label>Portrait Type / Service <span class="req">*</span></label>
+              <div class="eq5-wrap">
+                <span class="eq5-icon">🎨</span>
+                <select id="eq5-service" required>
+                  <option value="" disabled selected>Select portrait type</option>
+                  <option>Custom Portrait Painting</option>
+                  <option>Family Portrait</option>
+                  <option>Memorial Portrait</option>
+                  <option>Couple & Wedding Portrait</option>
+                  <option>Pet Portrait</option>
+                  <option>Celebrity & Charcoal Portrait</option>
+                  <option>General Enquiry</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="eq5-row">
+            <div class="eq5-field">
+              <label>Number of Subjects <span class="req">*</span></label>
+              <div class="eq5-wrap"><span class="eq5-icon">👥</span><input type="text" id="eq5-subjects" placeholder="e.g., 1 Person, 2 People, Family, Pet" required></div>
+            </div>
+            <div class="eq5-field">
+              <label>Preferred Size <span class="req">*</span></label>
+              <div class="eq5-wrap">
+                <span class="eq5-icon">📏</span>
+                <select id="eq5-size" required>
+                  <option value="" disabled selected>Select preferred size</option>
+                  <option>Small (8x10 in)</option>
+                  <option>Medium (12x16 in)</option>
+                  <option>Large (16x20 in)</option>
+                  <option>Extra Large (20x24 in+)</option>
+                  <option>Not Sure Yet</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="eq5-row">
+            <div class="eq5-field">
+              <label>Medium / Style <span class="opt">(Optional)</span></label>
+              <div class="eq5-wrap"><span class="eq5-icon">🖍️</span><input type="text" id="eq5-medium" placeholder="e.g., Oil Painting, Pencil Sketch, Watercolor"></div>
+            </div>
+            <div class="eq5-field">
+              <label>Budget Range <span class="req">*</span></label>
+              <div class="eq5-wrap">
+                <span class="eq5-icon">₹</span>
+                <select id="eq5-budget" required>
+                  <option value="" disabled selected>Select your budget range</option>
+                  <option>Under ₹5,000</option>
+                  <option>₹5,000 – ₹10,000</option>
+                  <option>₹10,000 – ₹20,000</option>
+                  <option>₹20,000 – ₹50,000</option>
+                  <option>Above ₹50,000</option>
+                  <option>Not Sure Yet</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="eq5-field">
+            <label>Reference Photo / Additional Images <span class="opt">(Optional)</span></label>
+            <div class="eq5-file">
+              <div class="eq5-file-label"><span>📤</span><div><span>Upload reference photos (if available)</span><span class="eq5-file-hint">JPG, PNG up to 10MB each</span></div></div>
+              <button type="button" class="eq5-file-btn" id="eq5-file-btn">Upload Files</button>
+              <input type="file" id="eq5-file" accept="image/*" multiple hidden>
+            </div>
+            <div class="eq5-file-name" id="eq5-file-name"></div>
+          </div>
+          <div class="eq5-field">
+            <label>Project Details / Special Requirements <span class="req">*</span></label>
+            <div class="eq5-wrap"><span class="eq5-icon eq5-icon-top">📝</span><textarea id="eq5-message" placeholder="Tell us about your portrait idea, background, colors, special requests, delivery date, or anything you'd like us to know..." maxlength="500" required></textarea></div>
+            <div class="eq5-count"><span id="eq5-count">0</span>/500</div>
+          </div>
+          <div class="eq5-field">
+            <label>Preferred Contact Method <span class="req">*</span></label>
+            <div class="eq5-methods">
+              <button type="button" class="eq5-method active" data-method="WhatsApp"><span>💬</span>WhatsApp</button>
+              <button type="button" class="eq5-method" data-method="Phone Call"><span>📞</span>Phone Call</button>
+              <button type="button" class="eq5-method" data-method="Email"><span>✉️</span>Email</button>
+            </div>
+          </div>
+          <label class="eq5-consent"><input type="checkbox" id="eq5-consent" required> I agree to be contacted regarding my enquiry.</label>
+          <button type="submit" class="eq5-submit">✉️ Send Enquiry →</button>
+        </form>
+        <p class="eq5-note">🛡️ Your information is safe with us. We respect your privacy.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="rv-bg">
   <div class="container">
@@ -251,6 +448,53 @@ footer{background:#020617;color:#334155;padding:28px 5vw;text-align:center;font-
   var nav=document.querySelector('nav');
   if(!nav)return;
   window.addEventListener('scroll',function(){nav.classList.toggle('nav-s',window.scrollY>50);},{passive:true});
+})();
+// Enquiry form -> WhatsApp
+(function(){
+  var form=document.getElementById('enquiry-form-5');
+  if(!form)return;
+  var msgEl=document.getElementById('eq5-message');
+  var countEl=document.getElementById('eq5-count');
+  if(msgEl&&countEl){
+    msgEl.addEventListener('input',function(){ countEl.textContent=msgEl.value.length; });
+  }
+  var fileInput=document.getElementById('eq5-file');
+  var fileBtn=document.getElementById('eq5-file-btn');
+  var fileNameEl=document.getElementById('eq5-file-name');
+  var fileCount=0;
+  if(fileBtn&&fileInput){
+    fileBtn.addEventListener('click',function(){ fileInput.click(); });
+    fileInput.addEventListener('change',function(){
+      fileCount=fileInput.files.length;
+      fileNameEl.textContent=fileCount ? fileCount+' file(s) selected - please attach them in the WhatsApp chat' : '';
+    });
+  }
+  var selectedMethod='WhatsApp';
+  var methodBtns=document.querySelectorAll('.eq5-method');
+  methodBtns.forEach(function(btn){
+    btn.addEventListener('click',function(){
+      methodBtns.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      selectedMethod=btn.getAttribute('data-method');
+    });
+  });
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=document.getElementById('eq5-name').value.trim();
+    var phone=document.getElementById('eq5-phone').value.trim();
+    var email=document.getElementById('eq5-email').value.trim();
+    var service=document.getElementById('eq5-service').value;
+    var subjects=document.getElementById('eq5-subjects').value.trim();
+    var size=document.getElementById('eq5-size').value;
+    var medium=document.getElementById('eq5-medium').value.trim();
+    var budget=document.getElementById('eq5-budget').value;
+    var message=document.getElementById('eq5-message').value.trim();
+    var lines=['Hello DimaArt! I would like to commission a custom portrait.','','Name: '+name,'Phone: '+phone,'Email: '+email,'Portrait Type: '+service,'Number of Subjects: '+subjects,'Preferred Size: '+size];
+    if(medium)lines.push('Medium/Style: '+medium);
+    lines.push('Budget Range: '+budget,'Preferred Contact Method: '+selectedMethod,'Project Details: '+message);
+    if(fileCount)lines.push('','(I have '+fileCount+' reference photo(s) to share - will attach here)');
+    window.open('https://wa.me/917002768435?text='+encodeURIComponent(lines.join('\n')),'_blank');
+  });
 })();
 // Parallax
 if(window.innerWidth>768){
