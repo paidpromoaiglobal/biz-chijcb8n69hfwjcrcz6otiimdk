@@ -102,11 +102,11 @@ section{padding:72px 5vw}
 .enq-intro-bg{position:absolute;inset:0;background-image:url('./p3.webp');background-size:cover;background-position:center;opacity:.14}
 .enq-intro-inner{position:relative;z-index:2}
 .enq-logo-row{display:flex;align-items:center;gap:14px;margin-bottom:30px}
-.enq-logo{width:52px;height:52px;border-radius:50%;border:1.5px solid #C9882A;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
 .enq-wordmark .wm1{font-family:'Playfair Display',serif;font-weight:700;font-size:1.3rem;display:block;color:#fff}
 .enq-wordmark .wm1 span{color:#C9882A}
 .enq-wordmark .wm2{font-size:.58rem;letter-spacing:.13em;color:rgba(255,255,255,.55);display:block;margin-top:2px}
-.enq-kicker{font-size:.7rem;font-weight:700;letter-spacing:.14em;color:#C9882A;margin-bottom:14px}
+.enq-wordmark-script{font-family:'Playfair Display',serif;font-style:italic;font-weight:700;font-size:1.7rem;color:#C9882A}
+.enq-wordmark-script .wm2{display:block;font-family:'Plus Jakarta Sans',sans-serif;font-style:normal;font-size:.6rem;letter-spacing:.18em;color:rgba(255,255,255,.6);margin-top:4px}
 .enq-headline{font-family:'Playfair Display',serif;font-size:clamp(1.7rem,3.2vw,2.3rem);line-height:1.22;font-weight:700;margin-bottom:16px}
 .enq-headline .h1{color:#fff;display:block}
 .enq-headline .h2{color:#C9882A;display:block}
@@ -141,12 +141,6 @@ section{padding:72px 5vw}
 .eq5-icon{position:absolute;left:13px;top:50%;transform:translateY(-50%);opacity:.55;font-size:.95rem;pointer-events:none}
 .eq5-icon.eq5-icon-top{top:16px;transform:none}
 .eq5-count{text-align:right;font-size:.72rem;color:#94a3b8;margin-top:4px}
-.eq5-file{display:flex;align-items:center;justify-content:space-between;gap:14px;border:1px dashed #d6b878;border-radius:10px;padding:14px 16px;background:#fdfaf3}
-.eq5-file-label{font-size:.82rem;color:#334155;display:flex;align-items:center;gap:10px}
-.eq5-file-label span{display:block}
-.eq5-file-hint{font-size:.72rem;color:#94a3b8;margin-top:2px}
-.eq5-file-btn{background:#fff;border:1px solid #C9882A;color:#C9882A;padding:9px 18px;border-radius:8px;font-size:.8rem;font-weight:600;cursor:pointer;white-space:nowrap;font-family:inherit}
-.eq5-file-name{font-size:.76rem;color:#94a3b8;margin-top:8px}
 .eq5-methods{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:18px}
 .eq5-method{display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 8px;border:1px solid #e2e8f0;border-radius:10px;background:#fff;cursor:pointer;font-size:.82rem;font-weight:600;color:#334155;transition:border-color .2s,background .2s;font-family:inherit}
 .eq5-method span{font-size:1.05rem}
@@ -155,6 +149,7 @@ section{padding:72px 5vw}
 .eq5-consent input{margin-top:3px;flex-shrink:0}
 .eq5-submit{width:100%;background:linear-gradient(90deg,#C9882A,#a8701f);color:#fff;border:none;padding:16px;border-radius:12px;font-weight:700;font-size:.92rem;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;transition:opacity .2s;display:flex;align-items:center;justify-content:center;gap:10px}
 .eq5-submit:hover{opacity:.9}
+.eq5-submit-dark{background:#1c1007}
 .eq5-note{display:flex;align-items:flex-start;gap:10px;background:#f8fafc;border-radius:10px;padding:14px 16px;margin-top:18px;color:#64748b;font-size:.78rem;line-height:1.55}
 /* REVIEWS */
 .rv-bg{background:#0f172a}
@@ -259,20 +254,17 @@ footer{background:#020617;color:#334155;padding:28px 5vw;text-align:center;font-
         <div class="enq-intro-bg"></div>
         <div class="enq-intro-inner">
           <div class="enq-logo-row">
-            <div class="enq-logo">🎨</div>
-            <div class="enq-wordmark"><span class="wm1">Dima<span>Art</span></span><span class="wm2">PORTRAITS THAT LAST FOREVER</span></div>
+            <div class="enq-wordmark-script">DimaArt <span>🖌️</span><span class="wm2">PORTRAIT PAINTINGS</span></div>
           </div>
-          <p class="enq-kicker">HANDCRAFTED. HEARTFELT. TIMELESS.</p>
-          <h2 class="enq-headline"><span class="h1">Your Vision.</span><span class="h2">Our Artistry.</span></h2>
-          <p class="enq-lead">Share your portrait idea and let us create a masterpiece that captures your emotions, memories and moments beautifully.</p>
+          <h2 class="enq-headline"><span class="h1">Your Memories,</span><span class="h2">Hand-Painted</span><span class="h1">to Perfection ♡</span></h2>
+          <p class="enq-lead">We create timeless hand-painted portraits that celebrate life, love and emotions. Every portrait is a masterpiece.</p>
           <div class="enq-features">
-            <div class="enq-feature-item"><div class="enq-feature-icon">🖌️</div><div><h4>100% Hand-Painted</h4><p>Every portrait is carefully hand-painted by our expert artists</p></div></div>
-            <div class="enq-feature-item"><div class="enq-feature-icon">🏆</div><div><h4>Premium Quality</h4><p>High quality canvas, colors and packaging for a lifetime of memories</p></div></div>
-            <div class="enq-feature-item"><div class="enq-feature-icon">💝</div><div><h4>Personalized Just For You</h4><p>Custom made to match your style, story and special moments</p></div></div>
-            <div class="enq-feature-item"><div class="enq-feature-icon">📦</div><div><h4>Safe &amp; On-Time Delivery</h4><p>Secure packaging and timely delivery across India</p></div></div>
+            <div class="enq-feature-item"><div class="enq-feature-icon">🎨</div><div><h4>100% Hand-Painted</h4><p>Every portrait is crafted with passion and precision</p></div></div>
+            <div class="enq-feature-item"><div class="enq-feature-icon">🛡️</div><div><h4>Premium Quality</h4><p>High-quality materials for lasting beauty</p></div></div>
+            <div class="enq-feature-item"><div class="enq-feature-icon">♡</div><div><h4>Made With Love</h4><p>We don't just paint faces, we paint emotions</p></div></div>
           </div>
           <div class="enq-contact-card">
-            <p class="enq-ct-title">Get in Touch</p>
+            <p class="enq-ct-title">Let's Create Something Beautiful</p>
             <a href="tel:070027 68435">📞 070027 68435</a>
             <p>📍 Basistha, Guwahati, Assam</p>
             <a href="https://wa.me/917002768435?text=Hello%20DimaArt!%20I%20came%20across%20your%20portrait%20painting%20studio%20and%20I'm%20interested%20in%20commissioning%20a%20custom%20portrait.%20Could%20you%20please%20share%20more%20details%20about%20pricing%2C%20timelines%2C%20and%20the%20process%3F" class="enq-contact-wa" aria-label="WhatsApp">💬</a>
@@ -281,12 +273,12 @@ footer{background:#020617;color:#334155;padding:28px 5vw;text-align:center;font-
       </div>
       <div class="enq-card" data-r>
         <h2><span class="g1">Make an</span> <span class="g2">Enquiry</span></h2>
-        <p class="enq-sub">Fill in your details below and we'll get back to you with the best options for your custom portrait.</p>
-        <div class="enq-divider"><span></span>🎨<span></span></div>
+        <div class="enq-divider"><span></span>♡<span></span></div>
+        <p class="enq-sub">Tell us about your portrait idea and we'll help bring your vision to life.</p>
         <form id="enquiry-form-5">
           <div class="eq5-row">
             <div class="eq5-field">
-              <label>Full Name <span class="req">*</span></label>
+              <label>Your Name <span class="req">*</span></label>
               <div class="eq5-wrap"><span class="eq5-icon">👤</span><input type="text" id="eq5-name" placeholder="Enter your full name" required></div>
             </div>
             <div class="eq5-field">
@@ -296,13 +288,13 @@ footer{background:#020617;color:#334155;padding:28px 5vw;text-align:center;font-
           </div>
           <div class="eq5-row">
             <div class="eq5-field">
-              <label>Email Address <span class="req">*</span></label>
-              <div class="eq5-wrap"><span class="eq5-icon">✉️</span><input type="email" id="eq5-email" placeholder="Enter your email address" required></div>
+              <label>Email Address <span class="opt">(Optional)</span></label>
+              <div class="eq5-wrap"><span class="eq5-icon">✉️</span><input type="email" id="eq5-email" placeholder="Enter your email address"></div>
             </div>
             <div class="eq5-field">
-              <label>Portrait Type / Service <span class="req">*</span></label>
+              <label>Portrait Type <span class="req">*</span></label>
               <div class="eq5-wrap">
-                <span class="eq5-icon">🎨</span>
+                <span class="eq5-icon">🖼️</span>
                 <select id="eq5-service" required>
                   <option value="" disabled selected>Select portrait type</option>
                   <option>Custom Portrait Painting</option>
@@ -319,12 +311,23 @@ footer{background:#020617;color:#334155;padding:28px 5vw;text-align:center;font-
           <div class="eq5-row">
             <div class="eq5-field">
               <label>Number of Subjects <span class="req">*</span></label>
-              <div class="eq5-wrap"><span class="eq5-icon">👥</span><input type="text" id="eq5-subjects" placeholder="e.g., 1 Person, 2 People, Family, Pet" required></div>
+              <div class="eq5-wrap">
+                <span class="eq5-icon">👥</span>
+                <select id="eq5-subjects" required>
+                  <option value="" disabled selected>Select number of subjects</option>
+                  <option>1 Person</option>
+                  <option>2 People</option>
+                  <option>Family</option>
+                  <option>Pet</option>
+                  <option>Couple</option>
+                  <option>Other</option>
+                </select>
+              </div>
             </div>
             <div class="eq5-field">
               <label>Preferred Size <span class="req">*</span></label>
               <div class="eq5-wrap">
-                <span class="eq5-icon">📏</span>
+                <span class="eq5-icon">⛶</span>
                 <select id="eq5-size" required>
                   <option value="" disabled selected>Select preferred size</option>
                   <option>Small (8x10 in)</option>
@@ -337,10 +340,6 @@ footer{background:#020617;color:#334155;padding:28px 5vw;text-align:center;font-
             </div>
           </div>
           <div class="eq5-row">
-            <div class="eq5-field">
-              <label>Medium / Style <span class="opt">(Optional)</span></label>
-              <div class="eq5-wrap"><span class="eq5-icon">🖍️</span><input type="text" id="eq5-medium" placeholder="e.g., Oil Painting, Pencil Sketch, Watercolor"></div>
-            </div>
             <div class="eq5-field">
               <label>Budget Range <span class="req">*</span></label>
               <div class="eq5-wrap">
@@ -356,33 +355,28 @@ footer{background:#020617;color:#334155;padding:28px 5vw;text-align:center;font-
                 </select>
               </div>
             </div>
-          </div>
-          <div class="eq5-field">
-            <label>Reference Photo / Additional Images <span class="opt">(Optional)</span></label>
-            <div class="eq5-file">
-              <div class="eq5-file-label"><span>📤</span><div><span>Upload reference photos (if available)</span><span class="eq5-file-hint">JPG, PNG up to 10MB each</span></div></div>
-              <button type="button" class="eq5-file-btn" id="eq5-file-btn">Upload Files</button>
-              <input type="file" id="eq5-file" accept="image/*" multiple hidden>
+            <div class="eq5-field">
+              <label>Expected Delivery <span class="opt">(Optional)</span></label>
+              <div class="eq5-wrap"><span class="eq5-icon">📅</span><input type="date" id="eq5-delivery"></div>
             </div>
-            <div class="eq5-file-name" id="eq5-file-name"></div>
           </div>
           <div class="eq5-field">
             <label>Project Details / Special Requirements <span class="req">*</span></label>
-            <div class="eq5-wrap"><span class="eq5-icon eq5-icon-top">📝</span><textarea id="eq5-message" placeholder="Tell us about your portrait idea, background, colors, special requests, delivery date, or anything you'd like us to know..." maxlength="500" required></textarea></div>
+            <div class="eq5-wrap"><span class="eq5-icon eq5-icon-top">📝</span><textarea id="eq5-message" placeholder="Share details about your portrait, reference photos, background preference, any specific requests..." maxlength="500" required></textarea></div>
             <div class="eq5-count"><span id="eq5-count">0</span>/500</div>
           </div>
           <div class="eq5-field">
             <label>Preferred Contact Method <span class="req">*</span></label>
             <div class="eq5-methods">
-              <button type="button" class="eq5-method active" data-method="WhatsApp"><span>💬</span>WhatsApp</button>
-              <button type="button" class="eq5-method" data-method="Phone Call"><span>📞</span>Phone Call</button>
+              <button type="button" class="eq5-method active" data-method="Phone Call"><span>📞</span>Phone Call</button>
+              <button type="button" class="eq5-method" data-method="WhatsApp"><span>💬</span>WhatsApp</button>
               <button type="button" class="eq5-method" data-method="Email"><span>✉️</span>Email</button>
             </div>
           </div>
           <label class="eq5-consent"><input type="checkbox" id="eq5-consent" required> I agree to be contacted regarding my enquiry.</label>
-          <button type="submit" class="eq5-submit">✉️ Send Enquiry →</button>
+          <button type="submit" class="eq5-submit eq5-submit-dark">➤ Send Enquiry</button>
         </form>
-        <p class="eq5-note">🛡️ Your information is safe with us. We respect your privacy.</p>
+        <p class="eq5-note">🔒 Your information is safe with us. We respect your privacy.</p>
       </div>
     </div>
   </div>
@@ -458,18 +452,7 @@ footer{background:#020617;color:#334155;padding:28px 5vw;text-align:center;font-
   if(msgEl&&countEl){
     msgEl.addEventListener('input',function(){ countEl.textContent=msgEl.value.length; });
   }
-  var fileInput=document.getElementById('eq5-file');
-  var fileBtn=document.getElementById('eq5-file-btn');
-  var fileNameEl=document.getElementById('eq5-file-name');
-  var fileCount=0;
-  if(fileBtn&&fileInput){
-    fileBtn.addEventListener('click',function(){ fileInput.click(); });
-    fileInput.addEventListener('change',function(){
-      fileCount=fileInput.files.length;
-      fileNameEl.textContent=fileCount ? fileCount+' file(s) selected - please attach them in the WhatsApp chat' : '';
-    });
-  }
-  var selectedMethod='WhatsApp';
+  var selectedMethod='Phone Call';
   var methodBtns=document.querySelectorAll('.eq5-method');
   methodBtns.forEach(function(btn){
     btn.addEventListener('click',function(){
@@ -484,15 +467,16 @@ footer{background:#020617;color:#334155;padding:28px 5vw;text-align:center;font-
     var phone=document.getElementById('eq5-phone').value.trim();
     var email=document.getElementById('eq5-email').value.trim();
     var service=document.getElementById('eq5-service').value;
-    var subjects=document.getElementById('eq5-subjects').value.trim();
+    var subjects=document.getElementById('eq5-subjects').value;
     var size=document.getElementById('eq5-size').value;
-    var medium=document.getElementById('eq5-medium').value.trim();
     var budget=document.getElementById('eq5-budget').value;
+    var delivery=document.getElementById('eq5-delivery').value;
     var message=document.getElementById('eq5-message').value.trim();
-    var lines=['Hello DimaArt! I would like to commission a custom portrait.','','Name: '+name,'Phone: '+phone,'Email: '+email,'Portrait Type: '+service,'Number of Subjects: '+subjects,'Preferred Size: '+size];
-    if(medium)lines.push('Medium/Style: '+medium);
-    lines.push('Budget Range: '+budget,'Preferred Contact Method: '+selectedMethod,'Project Details: '+message);
-    if(fileCount)lines.push('','(I have '+fileCount+' reference photo(s) to share - will attach here)');
+    var lines=['Hello DimaArt! I would like to commission a custom portrait.','','Name: '+name,'Phone: '+phone];
+    if(email)lines.push('Email: '+email);
+    lines.push('Portrait Type: '+service,'Number of Subjects: '+subjects,'Preferred Size: '+size,'Budget Range: '+budget);
+    if(delivery)lines.push('Expected Delivery: '+delivery);
+    lines.push('Preferred Contact Method: '+selectedMethod,'Project Details: '+message);
     window.open('https://wa.me/917002768435?text='+encodeURIComponent(lines.join('\n')),'_blank');
   });
 })();
